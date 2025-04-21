@@ -3,11 +3,11 @@
 ## 1. Node.js 설치
 
 - [설치](https://nodejs.org)
-    - LTS 버전은 안정된 버전
-    - 긍정적인 버튼을 선택해서 기본설치 하면됨
-    - `추후 NVM (Node Version Manager) 로 버전관리`
+  - LTS 버전은 안정된 버전
+  - 긍정적인 버튼을 선택해서 기본설치 하면됨
+  - `추후 NVM (Node Version Manager) 로 버전관리`
 - Node.js 는 PC 환경에서 JS 를 실행하도록 해줌
-- Node.js 는 Server, DB, Client  프로그램 제작 지원
+- Node.js 는 Server, DB, Client 프로그램 제작 지원
 
 ## 2. 기본 VSCode 설치
 
@@ -82,20 +82,20 @@ common.css, header.css, footer.css 등 영역별로 생성
 ```
 
 ## 2. 홈페이지 (index.html)
+
 - 파일명 준수 (소문자 기준)
 - `프로젝트명/public/index.html 파일` 생성
 - 키보드 단축키 활용 ; `!탭`
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -105,7 +105,7 @@ common.css, header.css, footer.css 등 영역별로 생성
 
 ```html
 <html lang="ko">
-    ...
+  ...
 </html>
 ```
 
@@ -119,8 +119,8 @@ common.css, header.css, footer.css 등 영역별로 생성
 
 ```html
 <body>
-    <!-- 전체레이아웃 -->
-     <div></div>
+  <!-- 전체레이아웃 -->
+  <div></div>
 </body>
 ```
 
@@ -130,15 +130,15 @@ common.css, header.css, footer.css 등 영역별로 생성
 
 ```html
 <body>
-    <!-- 전체레이아웃 -->
-     <div>
-        <!-- 문서 상단 -->
-        <header></header>
-        <!-- 문서 내용 -->
-        <header></header>
-        <!-- 문서 하단 -->
-        <header></header> 
-     </div>
+  <!-- 전체레이아웃 -->
+  <div>
+    <!-- 문서 상단 -->
+    <header></header>
+    <!-- 문서 내용 -->
+    <header></header>
+    <!-- 문서 하단 -->
+    <header></header>
+  </div>
 </body>
 ```
 
@@ -195,7 +195,7 @@ common.css, header.css, footer.css 등 영역별로 생성
 
 ### 1.1. 설치 확인 방법
 
-- `윈도우 로고 + R 키 입력` >  cmd 로 터미널 실행
+- `윈도우 로고 + R 키 입력` > cmd 로 터미널 실행
 
 ```bash
 git --version
@@ -270,20 +270,21 @@ git status
 git add .
 ```
 
+- Git 작업내역 메모하기
 
+```bash
+git commit
+```
 
+- 새로운 작업단위, 즉 브랜치 생성하기
 
+```bash
+git branch header
+git switch header
+```
 
+- 월요일 할거지롱.
 
 ## 3. GitHub 관리
 
 - 웹 에서 나의 계정에 코딩 버전을 관리하는 도구
-
-
-
-
-
-
-
-
-
