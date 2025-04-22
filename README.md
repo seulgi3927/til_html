@@ -1,15 +1,16 @@
 # header 영역 HTML 작업해 보기
-``` html
+
+````html
 <header class="header">
       <div class="layout">
         <!-- 상단의 위 -->
-        <div class="header_top" 
+        <div class="header_top"
           <div class="header_top_left">
             <!-- 로고 -->
             <div class="logo">
               <a href="http://www.interpark.com" target="_blank">
-                <img 
-                src="images/logo.svg" 
+                <img
+                src="images/logo.svg"
                 alt="로고"
                 title="인터파크"
                 />
@@ -19,7 +20,7 @@
             <div class="search">
               <!-- 제품검색 API 연동 -->
               <form class="search_from">
-                <input 
+                <input
                 type="text" placeholder="제품을 검색해주세요."/>
                 <input type="submit" value="검색"/>
               </form>
@@ -53,7 +54,7 @@
               <li><a href="#">
                 국내여행쿠폰<img src="images/badge_hot.svg"
                 alt="국내여행쿠폰"
-                title="국내여행쿠폰" 
+                title="국내여행쿠폰"
                 />
               </a>
             </li>
@@ -65,4 +66,5 @@
       </div>
     </header>
     ```
-    
+
+````
