@@ -1,96 +1,148 @@
 .header {
-    width: 100%;
-    height: 163px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ebebeb;
-  }
-  
-  .header_top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .header_top_left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .logo > a > img {
-    width: 150px;
-    height: 38px;
-  }
-  
-  .search {
-  }
-  .search_form {
-    display: flex;
-    align-items: center;
-    width: 460px;
-  }
-  
-  .search_form_word {
-    width: calc(100% - 50px);
-    height: 50px;
-    background-color: #f7f7f8;
-    border: none;
-    border-radius: 25px 0px 0px 25px;
-    padding-left: 15px;
-  }
-  .search_form_button {
-    width: 50px;
-    height: 50px;
-    background-color: #f7f7f8;
-    border: none;
-    border-radius: 0px 25px 25px 0px;
-    font-size: 0;
-    cursor: pointer;
-    
-    /* background-color: red;
-    background-image: url("../images/btn_search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 18px; */
-  
-    background: #f7f7f8 url("../images/btn_search.svg") no-repeat center;
-    background-size: 18px;
-  }
-    
-  .header_top_right {
-  }
-  .member {
-    display: flex;
-    gap: 20px;
-  }
-  .member > li > a {
-    font-size: 12px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 16px;
-  }
-  .header_bottom {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .header_bottom_nav {
-  }
-  .nav {
-    display: flex;
-  }
-  .header_bottom_eventmenu {
-  }
-  .cupon {
-    display: flex;
-    align-items: center;
-  }
-  .cupon > li > a {
-    display: flex;
-    align-items: center;
-  }
-  
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
+  margin: 20px 0;
+}
+
+.header_top_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo > a > img {
+  width: 152px;
+  height: auto;
+}
+
+.search {
+}
+.search_form {
+  display: flex;
+  align-items: center;
+  width: 460px;
+}
+
+.search_form_word {
+  width: calc(100% - 50px);
+  height: 50px;
+  background-color: #f7f7f8;
+  border: none;
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 15px;
+}
+.search_form_button {
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f8;
+  border: none;
+  border-radius: 0px 25px 25px 0px;
+  font-size: 0;
+  cursor: pointer;
+
+  /* background-color: red;
+  background-image: url("../images/btn_search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px; */
+
+  background: #f7f7f8 url("../images/btn_search.svg") no-repeat center;
+  background-size: 18px;
+}
+
+.header_top_right {
+}
+.member {
+  display: flex;
+  gap: 20px;
+}
+.member > li > a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 16px;
+}
+
+.header_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_bottom_nav {
+}
+.nav {
+  position: relative;
+  display: flex;
+  gap: 0px;
+}
+.nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  /* top: calc(100% - 50% - 24px / 2); */
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 2px;
+  height: 24px;
+  background-color: #e9e9e9;
+}
+
+.nav li a {
+  position: relative;
+
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 40px;
+}
+
+.nav li a.focus {
+  font-weight: 700 !important;
+}
+.nav li a.focus::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #1c1c1c;
+}
+
+.header_bottom_eventmenu {
+}
+.cupon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 30px;
+}
+.cupon > li > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #324b97;
+  padding: 0 20px;
+}
+.cupon li a img {
+  transform: translateY(10%);
+}
