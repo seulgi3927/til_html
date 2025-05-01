@@ -1,0 +1,67 @@
+.tour {
+  margin-top: 65px;
+}
+
+.section_top {
+  padding-bottom: 22px;
+}
+.section_title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+.section_desc {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.75);
+}
+.section_list {
+}
+.section_category {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.section_category_bts {
+  display: flex;
+  gap: 6px;
+}
+.section_category_bts > li {
+}
+.section_category_bts > li > button {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 52px;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+.section_category_bts > li > button.cate_focus {
+  border: 1px solid #333333;
+  color: #fff;
+  background-color: #333333;
+  font-weight: 700;
+}
+
+.section_slide {
+}
+.item {
+}
+.item > a {
+}
+.item > a > img {
+}
+.item > a > span {
+}
+.item > a > p {
+}
+.section_bts {
+}
+.section_bts > a {
+}
+.section_bts > a > img {
+}
