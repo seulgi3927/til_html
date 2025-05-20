@@ -1,10 +1,20 @@
 .header {
+  position: relative;
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
 }
+.header_down {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 
 .header_top {
+  /* 좌표 기준을 세워주자 */
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -13,6 +23,9 @@
   /* margin-top: 30px; */
   /* margin-bottom: 30px; */
   margin: 20px 0;
+}
+.header_top_down {
+  margin: 0px;
 }
 
 .header_top_left {
@@ -28,6 +41,12 @@
 
 .search {
 }
+.search_down {
+  position: absolute;
+  left: 350px;
+  top: 10px;
+}
+
 .search_form {
   display: flex;
   align-items: center;
@@ -62,11 +81,18 @@
 }
 
 .header_top_right {
+  position: relative;
 }
 .member {
   display: flex;
   gap: 20px;
 }
+.member_down {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
 .member > li > a {
   font-size: 12px;
   font-weight: 700;
@@ -112,6 +138,7 @@
 .nav li a.focus {
   font-weight: 700 !important;
 }
+
 .nav li a.focus::after {
   content: "";
 
@@ -143,6 +170,6 @@
   color: #324b97;
   padding: 0 20px;
 }
-.cupon li a img {
+.cupon > li > a > img {
   transform: translateY(10%);
 }
