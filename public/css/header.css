@@ -3,13 +3,14 @@
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
+  z-index: 999;
 }
 .header_down {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
 }
 
 .header_top {

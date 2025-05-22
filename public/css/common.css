@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -44,4 +45,32 @@ body {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto; */
+}
+/* 반응형 작업 */
+body {
+  background-color: skyblue;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-color: hotpink;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: yellowgreen;
+  }
 }

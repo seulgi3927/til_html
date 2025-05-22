@@ -2,6 +2,11 @@
   position: relative;
   margin-top: 30px;
 }
+/* 스크롤시 헤더가 반영안되는 부분 반영해서 레이아웃 적용*/
+.banner_fix {
+  padding-top: 50px;
+
+}
 .banner_slide {
   display: flex;
   gap: 25px;

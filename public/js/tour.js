@@ -119,7 +119,7 @@ window.addEventListener("load", function () {
           <a href="${item.link}">
             <div class="item_image">
               <img
-                src="${item.image}"
+                src="${item.img}"
                 alt="${item.title}"
                 title="${item.title}"
               />
