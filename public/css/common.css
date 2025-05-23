@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 .layout {
-  max-width: 1280px;
+  max-width: 1280px; 
   width: 100%;
 
   margin: 0 auto;
@@ -47,30 +47,55 @@ body {
   margin-right: auto; */
 }
 /* 반응형 작업 */
-body {
-  background-color: skyblue;
+@media all and (max-width: 1280px) {
+  .layout {
+    max-width: 1024;
+  }
 }
-
-@media screen and (max-width: 1024px) {
-  body {
-    background-color: aqua;
+@media all and (max-width: 1024px) {
+  .layout {
+    max-width: 760;
+  }
+}
+@media all and (max-width: 760px) {
+  .layout {
+    max-width: 100%;
   }
 }
 
-@media screen and (max-width: 960px) {
-  body {
-    background-color: orange;
-  }
+/* header 가 fixed 가 되면 강제로 padding 넣기 */
+.main_fixed {
+  padding-top: 150px;
 }
 
-@media screen and (max-width: 760px) {
-  body {
-    background-color: hotpink;
-  }
+/* sldie 관련 공통 */
+.slide_bt {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  border: 1px solid #e6e6e6;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+
+  z-index: 100;
+}
+.slide_bt_left {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
+}
+.slide_bt_right {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+/* swiper 버튼 비활성시 표현 */
+.swiper-button-disabled {
+  display: none !important;
 }
 
-@media screen and (max-width: 640px) {
-  body {
-    background-color: yellowgreen;
-  }
-}
+

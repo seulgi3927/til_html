@@ -2,10 +2,9 @@
   position: relative;
   margin-top: 30px;
 }
-/* 스크롤시 헤더가 반영안되는 부분 반영해서 레이아웃 적용*/
+/* 스크롤시 헤더 높이가 반영안되는 부분 반영해서 레이아웃 적용 */
 .banner_fix {
   padding-top: 50px;
-
 }
 .banner_slide {
   display: flex;
@@ -26,29 +25,4 @@
   /* 비율을 유지하면서 영역에 이미지 가득 채우기 */
   object-fit: cover;
   display: block;
-}
-.slide_bt {
-  position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  border: 1px solid #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
-
-  z-index: 100;
-
-}
-.banner_left {
-  left: 0;
-  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
-}
-.banner_right {
-  right: 0;
-  transform: translateX(50%) translateY(-50%);
 }
