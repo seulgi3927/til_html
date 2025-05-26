@@ -183,6 +183,9 @@ main {
 
 /* 모바일 헤더 */
 .m_header {
+
+  padding: 0 10px;
+  
   display: none;
   position: fixed;
   left: 0;
@@ -193,16 +196,33 @@ main {
   border-bottom: 1px solid #ebebeb;
   z-index: 999;
 }
+.m_header_menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.m_header_menu a {
+  font-size: 22px;
+  font-weight: 400;
+}
+.m_header_search {
+  display: flex;
+  align-items: center;
+}
+.m_header_search a {
+}
 
 /* 반응형 작업 */
 @media all and (max-width: 1024px) {
   main {
-    padding: 54px;
+    padding-top: 54px;
   }
   .header {
     display: none;
   }
   .m_header {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
 }

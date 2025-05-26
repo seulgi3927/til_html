@@ -48,22 +48,38 @@ window.addEventListener("load", function () {
     // 3.  slide 를 생성하고 작동 시킨다.
 
     const swiper = new Swiper(".sw_banner", {
-    slidesPerView: 2,
-    spaceBetween: 25,
-    speed: 1500,
-    loop: true,
-    pagination: {
-    el: ".sw_banner .swiper-pagination",
-    clickable: true,
-    },
-    navigation: {
-    nextEl: ".banner_next",
-    prevEl: ".banner_prev",
-    },
-    autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
+        speed: 1500,
+        loop: true,
+        pagination: {
+        el: ".sw_banner_pg",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".banner_next",
+        prevEl: ".banner_prev",
+        },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+        // 화면의 해상도에 따라서 작동
+        breakpoints: {
+          // 760 이상이면
+        760: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+        },
+          // 960 이상이면
+        960: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+        },
+          // 1024 이상이면
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+        },
+        },
     });
 
     const swBanner = this.document.querySelector(".sw_banner");

@@ -70,7 +70,7 @@
           <div class="header_bottom">
             <div class="header_bottom_nav">
               <ul class="nav">
-                <li class="home"><a href="#" class="focus">홈</a></li>
+                <li><a href="#" class="focus">홈</a></li>
                 <li><a href="#">투어</a></li>
                 <li><a href="#">티켓</a></li>
               </ul>
@@ -105,7 +105,19 @@
         </div>
       </header>
       <!-- 모바일 상단 -->
-      <div class="m_header">모바일 헤더</div>
+      <div class="m_header">
+        <div class="m_header_menu">
+          <a href="#">홈</a>
+          <a href="#">투어</a>
+          <a href="#">티켓</a>
+        </div>
+
+        <div class="m_header_search">
+          <a href="#">
+            <img src="images/btn_search.svg" alt="제품검색" />
+          </a>
+        </div>
+      </div>
 
       <!-- 메인 -->
       <main class="main">
@@ -117,8 +129,9 @@
               <div class="swiper-wrapper">
                 <!-- API 연동 -->
               </div>
-              <div class="swiper-pagination"></div>
             </div>
+
+            <div class="swiper-pagination sw_banner_pg"></div>
 
             <button class="slide_bt banner_prev slide_bt_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />
