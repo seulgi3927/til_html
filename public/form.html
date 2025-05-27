@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="join_form">
+        <h2>회원가입</h2>
+        <!-- action 은 값을 보낼 주소 -->
+        <form action="member_join.jsp" method="get"> 
+            <fieldset>
+                <legend>기본정보</legend>
+                <label for="userid">아이디</label>
+                <input
+                type="text"
+                name="userid"
+                id="userid"
+                minlength="8"
+                maxlength="16"
+                required
+                />
+
+                <button>아이디 중복확인</button>
+                
+                <label for="pass">비밀번호</label>
+                <input 
+                id="pass"
+                name="pass" 
+                type="password" 
+                minlength="8" 
+                maxlength="16" 
+                required/>
+                <input 
+                />
+                <label for="pass2">비밀번호 확인</label>
+                <input 
+                id="pass2" 
+                type="password" 
+                minlength="8" 
+                maxlength="16" 
+                required 
+                />
+                <label>이름</label>
+                <input type="text" name="name" required />
+                
+                <label>이메일</label>
+                <input type="email" name="email" required />
+
+                <label>성별</label>
+                <input type="radio" name="gender" value="male" checked /> 남성
+                <input type="radio" name="gender" value="female" /> 여성
+
+                <label>생년월일</label>
+                <input type="date" name="birthday" />
+
+                <label>이용약관</label>
+                <textarea readonly>이용약관이예요.</textarea>
+                
+                <br />
+                <label>이용약관동의</label>
+                <input type="checkbox" name="agree" />
+                
+                <br />
+                <label>파일(최대 5M)</label>
+                <input type="file" name="file" />
+                        </fieldset>
+            <!-- 부가정보 -->
+            <fieldset>
+                <legend>부가정보</legend>
+                <label>지역</label>
+                <select name="city">
+                    <option value="gd">대구</option>
+                    <option value="se">서울</option>
+                </select>
+            </fieldset>
+            <!-- 버튼 -->
+            <fieldset>
+                <input type="reset" value="재작성" />
+                <input type="submit" value="회원가입" />
+            </fieldset>
+            </form>
+        </div>
+        </body>
+    </html>
